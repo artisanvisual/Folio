@@ -1,0 +1,181 @@
+@font-face {
+	font-family: "roboto-slab";
+	src: url("../font/roboto-slab/roboto-slab.eot");
+	src: url("../font/roboto-slab/roboto-slab.eot#iefix") format("embedded-opentype"),
+	url("../font/roboto-slab/roboto-slab.woff") format("woff"),
+	url("../font/roboto-slab/roboto-slab.ttf") format("truetype"),
+	url("../font/roboto-slab/roboto-slab.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+p
+{
+font-family: "roboto-slab";
+font-size: 3em;
+}
+
+p2
+{
+font-family: "roboto-slab";
+font-size: 1.5em;
+z-index: 20000;
+}
+
+#logo
+{
+width: 48em;
+position: relative;
+top: 50%;
+left: 50%;
+margin: -24em 0 0 -24em;
+
+}
+
+#logo img
+{
+float: left;
+width: 48em;
+position: fixed;
+top: 50%;
+left: 50%;
+margin: -24em 0 0 -24em;
+}
+
+#bg
+{
+opacity: 0;
+    -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+    -webkit-animation-delay: 2s;
+
+       -moz-animation: fadein 6s; /* Firefox < 16 */
+       -moz-animation-delay: 2s;
+        -ms-animation: fadein 6s; /* Internet Explorer */
+        -ms-animation-delay: 2s;
+         -o-animation: fadein 6s; /* Opera < 12.1 */
+         -o-animation-delay:2s;
+            animation: fadein 6s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+            -moz-animation-fill-mode: forwards;
+            -webkit-animation-fill-mode: forwards;
+            -ms-animation-direction: forwards;
+            -o-animaton-direction:forwards;
+            }
+#text
+{
+position:absolute;
+top: 52%;
+left: 49.625%;
+margin-top: -6.25em;
+margin-left: -6.25em;
+}
+
+
+#sticky-anchor
+{
+position: absolute;
+top: 40%;
+}
+
+#text.stick 
+{ position: fixed;
+top: 0;
+left: 0;
+margin-top: 0;
+margin-left: 0;
+    z-index: 10000;
+    background: rgba(255,255,255,0.8);
+    background-position-x: -49.625%;
+    width: 100%;
+height: 5em;
+}
+
+#text.stick p
+{
+position:relative;
+left: 49.625%;
+margin-left: -2.09175em;
+margin-top: 0.5em;
+z-index: 1000;
+}
+
+#text svg
+{
+float: left;
+position: relative;
+left: 50%;
+top: 20%;
+margin-top: 1em;
+margin-left: -1.6875em;
+}
+
+#sitetext
+{
+z-index: 100000000;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+}
+
+#portfolio
+{
+width: 100%;
+position: absolute;
+top: 100%;
+
+}
+
+#portfolio iframe
+{
+width: 100%;
+height: 90%;
+-webkit-box-shadow:  0px -3px 20px -8px rgba(0,0,0,0.71);
+-moz-box-shadow:  0px -3px 20px -8px rgba(0,0,0,0.71);
+box-shadow:  0px -3px 20px -8px rgba(0,0,0,0.71);
+margin-top: 1em;
+margin-bottom: 5.125%;
+}
+
+.fancybox-wrap { 
+position: absolute !important;
+top: 95% !important;
+height: 85% !important;
+margin-bottom: 5em !important
+}
+
+.fancybox-overlay
+{
+display: none !important;
+}
+
+#contactinfo
+{
+position: absolute;
+bottom: 250%;
+}
